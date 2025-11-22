@@ -27,7 +27,7 @@ def load_models():
     try:
         with open('scaler.pkl', 'rb') as f:
             scaler = pickle.load(f)
-        with open('kmeans.pkl', 'rb') as f:
+        with open('kmeans_model.pkl', 'rb') as f:
             kmeans = pickle.load(f)
         print("Models loaded successfully")
     except Exception as e:
